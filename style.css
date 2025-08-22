@@ -1,5 +1,7 @@
 :root {
     --background-color: rgb(31, 31, 31);
+    --background-lighter-color: rgb(50, 50, 50);
+    --background-darker-color: rgb(25, 25, 25);
     --regular-font-family: 'Inter';
     --regular-font-size: 18px;
     --regular-font-color: white;
@@ -7,11 +9,27 @@
     --accent-color: rgb(35, 169, 242);
 }
 
+h2 {
+    margin: 0;
+}
+
 body {
     margin: 0;
     padding: 0;
 
     background-color: var(--background-color);
+    font-family: var(--regular-font-family);
+    font-size: var(--regular-font-size);
+    color: var(--regular-font-color);
+    letter-spacing: var(--regular-font-letter-spacing);
+}
+
+button {
+    border-radius: 10px;
+    padding: 10px 20px;
+    text-align: center;
+
+    background-color: var(--background-lighter-color);
     font-family: var(--regular-font-family);
     font-size: var(--regular-font-size);
     color: var(--regular-font-color);
@@ -32,10 +50,18 @@ nav ul {
     list-style: none;
     margin: 0;
     padding: 0;
+    height: 74px;
 }
 
 nav ul li {
-    margin: 1rem;
+    height: 64px;
+    width: 64px;
+    margin: 0.5rem;
+}
+
+nav ul li a {
+    width: 64px;
+    height: 64px;
 }
 
 .underborder {
@@ -49,4 +75,80 @@ nav ul li {
 .icon {
     width: 2em;
     height: 2em;
+}
+
+.flexcenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.content {
+    height: 88vh;
+    width: 100%;
+}
+
+.signup-container {
+    height: 100vh;
+}
+
+.signup-form {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+    background-color: var(--background-lighter-color);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.create-field-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.darker {
+    background-color: var(--background-darker-color);
+}
+
+.error-border {
+    border: 2px solid red !important;
+    border-bottom: 2px solid red;
+    transition: all 0.3s;
+    border-radius: 1px;
+}
+
+.disabled {
+    cursor: not-allowed;
+    opacity: 0.4;
+}
+
+.input-text {
+    background-color: var(--background-lighter-color);
+    border: none;
+    border-bottom: 2px solid var(--accent-color);
+    padding: 6px 4px;
+    font-size: 16px;
+    color: var(--regular-font-color);
+}
+
+.input-text:focus {
+    outline: none;
+}
+
+
+
+.aboba-2 {
+    background: transparent;
+    color: #fff;
+    border: none;
+    border-bottom: 2px solid #555;
+    padding: 6px 4px;
+    font-size: 16px;
+}
+
+.aboba-2:focus {
+    outline: none;
+    border-bottom-color: #4fa3ff;
 }
