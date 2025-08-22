@@ -1,0 +1,52 @@
+:root {
+    --background-color: rgb(31, 31, 31);
+    --regular-font-family: 'Inter';
+    --regular-font-size: 18px;
+    --regular-font-color: white;
+    --regular-font-letter-spacing: 1px;
+    --accent-color: rgb(35, 169, 242);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+
+    background-color: var(--background-color);
+    font-family: var(--regular-font-family);
+    font-size: var(--regular-font-size);
+    color: var(--regular-font-color);
+    letter-spacing: 1px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 15px;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 1rem;
+}
+
+.underborder {
+    border-bottom: 2px solid var(--accent-color);
+}
+
+.clickable {
+    cursor: pointer;
+}
+
+.icon {
+    width: 2em;
+    height: 2em;
+}
