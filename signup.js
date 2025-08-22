@@ -52,7 +52,7 @@ export function mount(container, onComplete) {
 
         const playerProfile = {
             name: name,
-            picture: null,
+            picture: 0,
             wins: 0,
             loses: 0
         }
