@@ -52,7 +52,7 @@ export function mount(container, onComplete) {
 
         const playerProfile = {
             name: name,
-            picture: 0,
+            hero: "wisp",
             wins: 0,
             loses: 0
         }

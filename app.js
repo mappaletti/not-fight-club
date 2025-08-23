@@ -28,7 +28,9 @@ export function mount(container) {
         }
 
         if (view === "character") {
-            content.innerHTML = `<h1>character</h1>`
+            import("./characterView.js").then(module => {
+                module.render(content)
+            });
             return;
         }
 
@@ -45,5 +47,5 @@ export function mount(container) {
         renderView(a.dataset.view);
     });
 
-    renderView("main");
+    renderView("character");
 }
