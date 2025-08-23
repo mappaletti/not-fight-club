@@ -187,9 +187,9 @@ nav ul li a {
     align-items: center;
     /* border: 1px dotted var(--accent-color); */
     height: 100%;
-
     width: 200px;
 }
+
 
 .player-character-bottom {
     display: flex;
@@ -258,4 +258,42 @@ nav ul li a {
         0 0 4px red,
         0 0 8px #aa0000,
         0 0 12px #660000;
+}
+
+.icon-hoverable:hover {
+    box-shadow: 0 0 12px var(--accent-color);
+    /* золотое сияние */
+    transform: translateY(-2px);
+    /* лёгкий подскок */
+    cursor: pointer;
+}
+
+.icon-clickable:active {
+    transform: scale(0.95);
+}
+
+.hidden {
+    display: none !important;
+}
+
+.selection-menu-container {
+    background-color: var(--background-darker-color);
+    border: 2px solid var(--accent-color);
+    border-radius: 10px;
+    position: fixed;
+    left: 200px;
+    padding: 10px;
+
+    display: grid;
+    grid-template-columns: repeat(4, 64px);
+    gap: 15px;
+}
+
+.choose-menu-container>a {
+    width: 64px;
+    height: 64px;
+}
+
+.selected {
+    box-shadow: 0 0 12px gold !important;
 }

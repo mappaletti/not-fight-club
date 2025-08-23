@@ -114,7 +114,7 @@ export const HEROES = Object.freeze({
     wisp: Object.freeze({
         id: "wisp",
         name: "Choose Your Hero",
-        description: `Click on icon or model to choose your character.`,
+        description: `Click on the icon to choose your character.`,
         icon_path: ICONS + `Wisp-icon.webp`,
         model_path: MODELS + `Wisp-model.webp`,
         race: "aaa",

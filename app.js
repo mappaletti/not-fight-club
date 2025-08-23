@@ -1,20 +1,23 @@
 export function mount(container) {
     const mainAppHtml = `<header class="underborder">
-            <div class="header-left-side">Main</div>
-            <div class="header-right-side">
-                <nav>
-                    <ul>
-                        <li><a href="#" data-view="main"><img src="assets/icons/BTNHoldPosition.webp" alt="main"></a></li>
-                        <li><a href="#" data-view="character"><img src="assets/icons/BTNSleep.webp" alt="character"></a></li>
-                        <li><a href="#" data-view="settings"><img src="assets/icons/BTNHumanBuild.webp" alt="settings"></a></li>
-                    </ul>
-                </nav>
-            </div>
-        </header>
+                <div class="header-left-side">Main</div>
+                <div class="header-right-side">
+                    <nav>
+                        <ul>
+                            <li><a href="#" data-view="main"><img class="icon-hoverable icon-clickable"
+                                        src="assets/icons/BTNHoldPosition.webp" alt="main"></a></li>
+                            <li><a href="#" data-view="character"><img class="icon-hoverable icon-clickable"
+                                        src="assets/icons/BTNSleep.webp" alt="character"></a></li>
+                            <li><a href="#" data-view="settings"><img class="icon-hoverable icon-clickable"
+                                        src="assets/icons/BTNHumanBuild.webp" alt="settings"></a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
 
-        <div class="content flexcenter">
-            
-        </div>`;
+            <div class="content flexcenter">
+            </div>
+`;
 
     container.innerHTML = mainAppHtml;
     const content = container.querySelector(".content");
