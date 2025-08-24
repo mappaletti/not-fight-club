@@ -315,7 +315,7 @@ export function render(container) {
     }
 
     const battle = matchmaking(CREEPS);
-    fight(battle.enemyHero, battle.playerHero, battle.playerStats, battle.battleInfo);
+    fight(battle.enemyHero, battle.playerHeroOb, battle.playerStats, battle.battleInfo);
     setupAttackButtonValidation(DOM);
     setupAttackHandler(DOM, battle);
 
