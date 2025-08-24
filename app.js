@@ -27,13 +27,13 @@ export function mount(container) {
         content.innerHTML = "";
 
         if (view === "main") {
-            // content.innerHTML = `<button id="fight-button">FIGHT!</button>`;
-            // const fightButton = container.querySelector("#fight-button");
-            // fightButton.addEventListener("click", () => {
-            import("./fight.js").then(module => {
-                module.render(content);
-            })
-            // });
+            content.innerHTML = `<button id="fight-button">FIGHT!</button>`;
+            const fightButton = container.querySelector("#fight-button");
+            fightButton.addEventListener("click", () => {
+                import("./fight.js").then(module => {
+                    module.render(content);
+                })
+            });
             title.innerHTML = "Main";
             return;
         }
@@ -60,5 +60,5 @@ export function mount(container) {
         renderView(a.dataset.view);
     });
 
-    renderView("main");
+    renderView("character");
 }
