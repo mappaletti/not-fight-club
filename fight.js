@@ -204,9 +204,9 @@ export function render(container) {
             return saved;
         }
         const playerOb = getPlayerProfile();
-        const playerHeroOb = getHero(playerOb.hero);
+        const playerHero = getHero(playerOb.hero);
 
-        const race = getHero(getPlayerProfile("hero")).race;
+        const race = playerHero.race;
         const wins = getPlayerProfile("wins");
 
         const enemiesPool = Object.values(enemies).filter(c => c.race != race).filter(c => c.tier <= wins + 1)
@@ -222,13 +222,13 @@ export function render(container) {
 
         const state = {
             playerOb,
-            playerHeroOb,
+            playerHero,
             playerStats,
             enemyHero,
             battleInfo
         }
 
-        saveBattle(playerHeroOb, playerStats, enemyHero, battleInfo);
+        saveBattle(playerHero, playerStats, enemyHero, battleInfo);
 
         return state
     }
@@ -315,7 +315,7 @@ export function render(container) {
     }
 
     const battle = matchmaking(CREEPS);
-    fight(battle.enemyHero, battle.playerHeroOb, battle.playerStats, battle.battleInfo);
+    fight(battle.enemyHero, battle.playerHero, battle.playerStats, battle.battleInfo);
     setupAttackButtonValidation(DOM);
     setupAttackHandler(DOM, battle);
 
