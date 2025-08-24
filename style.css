@@ -260,6 +260,17 @@ nav ul li a {
         0 0 12px #660000;
 }
 
+.undead-style {
+    background: linear-gradient(180deg, #e0b3ff, #8a2be2, #2e003e);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    text-shadow: 0 0 6px rgba(138, 43, 226, 0.6);
+}
+
+
+
 .icon-hoverable:hover {
     box-shadow: 0 0 12px var(--accent-color);
     /* золотое сияние */
