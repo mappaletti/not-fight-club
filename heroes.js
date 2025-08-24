@@ -119,6 +119,41 @@ export const HEROES = Object.freeze({
         model_path: MODELS + `Wisp-model.webp`,
         race: "aaa",
     }),
+    deathKnight: Object.freeze({
+        id: "deathKnight",
+        name: "Death Knight",
+        description: `Fallen champion who commands unholy auras, death coils, and dark steeds.`,
+        icon_path: ICONS + `DeathKnight-icon.webp`,
+        model_path: MODELS + `DeathKnight-model.webp`,
+        race: "undead",
+    }),
+
+    lich: Object.freeze({
+        id: "lich",
+        name: "Lich",
+        description: `Cold-blooded sorcerer who unleashes frost novas and crippling curses.`,
+        icon_path: ICONS + `Lich-icon.webp`,
+        model_path: MODELS + `Lich-model.webp`,
+        race: "undead",
+    }),
+
+    dreadlord: Object.freeze({
+        id: "dreadlord",
+        name: "Dreadlord",
+        description: `Vampiric manipulator who casts sleep, spreads carrion swarms, and drains life.`,
+        icon_path: ICONS + `Dreadlord-icon.webp`,
+        model_path: MODELS + `Dreadlord-model.webp`,
+        race: "undead",
+    }),
+
+    cryptLord: Object.freeze({
+        id: "cryptLord",
+        name: "Crypt Lord",
+        description: `Burrowing scarab monarch who impales foes and summons swarming beetles.`,
+        icon_path: ICONS + `CryptLord-icon.webp`,
+        model_path: MODELS + `CryptLord-model.webp`,
+        race: "undead",
+    }),
 });
 
 
