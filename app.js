@@ -21,12 +21,20 @@ export function mount(container) {
 
     container.innerHTML = mainAppHtml;
     const content = container.querySelector(".content");
+    const title = container.querySelector(".header-left-side")
 
     function renderView(view) {
         content.innerHTML = "";
 
         if (view === "main") {
-            content.innerHTML = `<button id="fight-button">FIGHT!</button>`
+            // content.innerHTML = `<button id="fight-button">FIGHT!</button>`;
+            // const fightButton = container.querySelector("#fight-button");
+            // fightButton.addEventListener("click", () => {
+            import("./fight.js").then(module => {
+                module.render(content);
+            })
+            // });
+            title.innerHTML = "Main";
             return;
         }
 
@@ -34,11 +42,13 @@ export function mount(container) {
             import("./characterView.js").then(module => {
                 module.render(content)
             });
+            title.innerHTML = "Character";
             return;
         }
 
         if (view === 'settings') {
             content.innerHTML = `<h1>settings</h1>`
+            title.innerHTML = "Settings";
             return;
         }
     }
@@ -50,5 +60,5 @@ export function mount(container) {
         renderView(a.dataset.view);
     });
 
-    renderView("character");
+    renderView("main");
 }

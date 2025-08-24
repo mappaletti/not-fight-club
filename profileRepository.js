@@ -22,10 +22,10 @@ export function getPlayerProfile(key) {
     const profile = JSON.parse(stored);
 
     if (!key) {
-        // ничего не указано → возвращаем весь объект
+        // ничего не указано -> возвращаем весь объект
         return profile;
     }
 
-    // если параметр есть → вернём его, если нет → undefined
+    // если параметр есть -> вернём его, если нет -> undefined
     return profile[key];
 }

@@ -297,3 +297,195 @@ nav ul li a {
 .selected {
     box-shadow: 0 0 12px gold !important;
 }
+
+.fight-container {
+    display: flex;
+    justify-content: space-between;
+
+    background-color: var(--background-darker-color);
+    border: 2px solid var(--accent-color);
+
+    padding: 15px;
+    height: 600px;
+    width: 1200px;
+
+    border-radius: 15px;
+}
+
+.info-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    width: 25%;
+    /* border: 1px dotted red; */
+}
+
+.hero-icon-container {
+    display: flex;
+    gap: 10px;
+}
+
+.hero-icon-container>img {
+    width: 64px;
+    height: 64px;
+}
+
+.name-and-hpbar-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    /* border: 1px dotted red; */
+}
+
+.fight-hero-model-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: 1px solid var(--accent-color);
+    border-radius: 10px;
+    background-color: black;
+    height: 80%;
+}
+
+.fight-hero-model-container>img {
+    min-width: 150px;
+}
+
+.hero-name-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-name-container>p {
+    margin: 0px;
+}
+
+.hero-hpbar {
+    display: flex;
+
+    width: 220px;
+    height: 24px;
+    background-color: var(--background-lighter-color);
+    border-radius: 10px;
+    border: 1px solid var(--accent-color);
+    overflow: hidden;
+}
+
+.hpbar-fill {
+    height: 100%;
+    width: 100%;
+
+    border-radius: 10px;
+    background-color: red
+}
+
+.hpbar-counter {
+    position: fixed;
+    padding-left: 5px;
+}
+
+.enemy-hero-icon-container {
+    flex-direction: row-reverse;
+}
+
+.battle-controls {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    gap: 20px;
+
+    font-size: var(--smaller-font-size);
+}
+
+.battle-controls>p {
+    align-self: center;
+    margin: 1px;
+}
+
+.separator {
+    width: 1px;
+    background-color: var(--accent-color);
+}
+
+.zone-picker {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.zones>p {
+    margin: 1px;
+}
+
+.checkbox-checkbox-container {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.checkbox-def {
+    flex-direction: row-reverse;
+}
+
+.logs-container {
+    background-color: black;
+    border: 1px solid var(--accent-color);
+    font-family: "Courier New";
+    letter-spacing: 0px;
+
+    height: 250px;
+    width: 600px;
+
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding-right: 8px;
+    overflow-wrap: anywhere;
+}
+
+.logs-container::-webkit-scrollbar {
+    width: 8px;
+}
+
+.logs-container::-webkit-scrollbar-thumb {
+    background: var(--accent-color);
+    border-radius: 8px;
+}
+
+.logs-container::-webkit-scrollbar-track {
+    background: black;
+}
+
+.logs-container>p {
+    margin: 5px;
+}
+
+.button-attacak-container {
+    align-self: center;
+}
+
+.attack-button {
+    border: 1px solid black;
+    transition: border 0.2s;
+
+}
+
+.attack-button-active:hover {
+    border: 1px solid var(--accent-color);
+}
+
+.attack-button-active:active {
+    scale: 0.9;
+}
+
+.marked {
+    font-weight: 900;
+    color: var(--accent-color);
+}
+
+.crit {
+    color: darkred;
+}
