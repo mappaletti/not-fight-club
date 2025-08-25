@@ -508,3 +508,8 @@ nav ul li a {
 .crit {
     color: darkred;
 }
+
+.mappaletti-icon {
+    width: 64px;
+    height: 64px;
+}
